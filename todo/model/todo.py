@@ -8,5 +8,14 @@ class Todo:
         self.tags: list[str] = []
 
     def mark_completed(self):
-        self.completed = True
+        self.completed: bool = True
+
+    def add_tag(self, tags: list[str]):
+        self.tags = tags
+
+    def __str__(self):
+        return f"{self.code_id}{self.title}"
+
+
+
 
